@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "✨ root",
+      "path": "./"
+    },
+    {
+      "name": "🖥️ example app",
+      "path": "./apps/example-app"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules/": true,
+      "libs/": true,
+      "tools/": true,
+      "apps/": true
+    }
+  }
+}
