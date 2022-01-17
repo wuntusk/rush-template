@@ -1,13 +1,9 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-        "outDir":"dist",
-        "types":["node","jest"],
-        "resolveJsonModule": true,
-    },
-    "include": ["./src/**/*","./package.json"],
-    "exclude": [
-        "./dist",
-        "node_modules"
-    ]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "out",
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "out"]
 }

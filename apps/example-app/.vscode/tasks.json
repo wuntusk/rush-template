@@ -12,10 +12,20 @@
       "problemMatcher": []
     },
     {
-      "label": "build example-app",
+      "label": "show_env",
+      "type": "shell",
+      "command": "echo",
+      "args": ["${env:USERNAME}", "workspaceFolder = ${workspaceFolder}"]
+    },
+    {
+      "label": "app_build_to",
       "type": "shell",
       "command": "rush build --to example-app",
       "problemMatcher": []
+    },
+    {
+      "label": "build example-app",
+      "dependsOn": ["show_env", "app_build_to"]
     }
   ]
 }

@@ -65,5 +65,4 @@ common/autoinstallers/*/.npmrc
 **/.rush/temp/
 
 
-**/dist
-**/lib
+**/out

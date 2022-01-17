@@ -14,5 +14,5 @@ module.exports = {
       { terms: ['todo', 'fixme'], location: 'anywhere' },
     ],
   },
-  ignorePatterns: ['**/lib/**/*.js', '**/lib/**/*.ts', '**/generated'],
+  ignorePatterns: ['**/out/**/*.js', '**/out/**/*.ts', '**/generated'],
 };

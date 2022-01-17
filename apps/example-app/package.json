@@ -2,9 +2,8 @@
   "name": "example-app",
   "version": "1.0.0",
   "description": "example for rush template",
-  "author": "Monty Schmidt <monty@wuntusk.com>",
-  "license": "ISC",
-  "main": "lib/src/index.js",
+  "author": "Monty Schmidt <monty@xsofo.com>",
+  "main": "out/src/index.js",
   "dependencies": {
     "@xsofo/test-lib": "1.0.0",
     "commander": "^7.2.0",

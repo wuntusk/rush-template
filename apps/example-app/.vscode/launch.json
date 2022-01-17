@@ -9,9 +9,7 @@
       "name": "vscode-jest-tests",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-      "args": [
-        "--runInBand"
-      ],
+      "args": ["--runInBand"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
@@ -30,11 +28,10 @@
       //  "--preserve-symlinks",
       //  "--preserve-symlinks-main"
       //],
-      "args": [
-        "test",
-        "sir",
-        "--hello"
-      ]
+      //"outFiles": ["${workspaceFolder}/{out,node_modules/@xsofo}/**/*.js"],
+      //"outFiles": ["${workspaceFolder}/../../{apps,libs}/example-app/out/**/*.js"],
+      "outFiles": ["${workspaceFolder}/../../libs/test-lib/out/**/*.js"],
+      "args": ["test", "sir", "--hello"]
     }
   ]
 }
