@@ -1,0 +1,45 @@
+{
+  "name": "@xsofo/test-lib",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Monty Schmidt <monty@wuntusk.com>",
+  "homepage": "https://github.com/wuntusk/gqlpages#readme",
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuntusk/gqlpages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuntusk/gqlpages/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "~26.0.22",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  }
+}

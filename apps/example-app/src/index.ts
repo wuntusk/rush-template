@@ -1,6 +1,11 @@
 import { Command } from 'commander';
+import { Test } from '@xsofo/test-lib';
 
 const program = new Command();
+
+const value = Test('testing parameter');
+
+console.log(value);
 
 program.version('1.0').description('rush test program');
 

@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rush-temp/example-app': file:./projects/example-app.tgz
+  '@rush-temp/test-lib': file:./projects/test-lib.tgz
   '@rushstack/eslint-config': ~2.3.4
   '@types/jest': ~26.0.22
   '@types/node': ^14.14.37
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   '@rush-temp/example-app': file:projects/example-app.tgz
+  '@rush-temp/test-lib': file:projects/test-lib.tgz_ts-node@9.1.1
   '@rushstack/eslint-config': 2.3.4_eslint@7.32.0+typescript@4.4.4
   '@types/jest': 26.0.24
   '@types/node': 14.17.33
@@ -4838,7 +4840,7 @@ packages:
     dev: false
 
   file:projects/example-app.tgz:
-    resolution: {integrity: sha512-g2vUZLQxhc/jm+sDIPYrGry4QO+Zwmz5bDSqH8J5eu638gGxYPhdkZtJiKsTKc0jjSnq3XyaoVZKMO4eGGYW2w==, tarball: file:projects/example-app.tgz}
+    resolution: {integrity: sha512-iJ0jdsUwl9Ud3/CiyPjjZAOCJNpVwtXuTd7ndjiEQ37LbyGBWOqKIKPxHuuImYjzOabV1RK1PPG1Ad931gRcMg==, tarball: file:projects/example-app.tgz}
     name: '@rush-temp/example-app'
     version: 0.0.0
     dependencies:
@@ -4860,5 +4862,30 @@ packages:
       - bufferutil
       - canvas
       - supports-color
+      - utf-8-validate
+    dev: false
+
+  file:projects/test-lib.tgz_ts-node@9.1.1:
+    resolution: {integrity: sha512-BHWhMEzymUsO7NpDF9YOdQh1tWnTmpYcT0cjUawYfMwkHvLep7HtRVL19T1C4AOyGSjnO2+bpOFIR8WQL+uZ+A==, tarball: file:projects/test-lib.tgz}
+    id: file:projects/test-lib.tgz
+    name: '@rush-temp/test-lib'
+    version: 0.0.0
+    dependencies:
+      '@types/jest': 26.0.24
+      '@types/node': 14.17.33
+      '@typescript-eslint/eslint-plugin': 4.33.0_cc617358c89d3f38c52462f6d809db4c
+      '@typescript-eslint/parser': 4.33.0_eslint@7.32.0+typescript@4.4.4
+      eslint: 7.32.0
+      eslint-config-prettier: 8.3.0_eslint@7.32.0
+      eslint-plugin-prettier: 3.4.1_6e975bd57c7acf028c1a9ddbbf60c898
+      jest: 26.6.3_ts-node@9.1.1
+      prettier: 2.4.1
+      ts-jest: 26.5.6_jest@26.6.3+typescript@4.4.4
+      typescript: 4.4.4
+    transitivePeerDependencies:
+      - bufferutil
+      - canvas
+      - supports-color
+      - ts-node
       - utf-8-validate
     dev: false

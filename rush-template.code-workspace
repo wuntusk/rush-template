@@ -5,6 +5,10 @@
       "path": "./"
     },
     {
+      "name": "️📦 test lib",
+      "path": "./libs/test-lib"
+    },
+    {
       "name": "🖥️ example app",
       "path": "./apps/example-app"
     }
