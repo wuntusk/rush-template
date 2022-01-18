@@ -19,18 +19,17 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Example App",
-      "program": "${workspaceFolder}/src/index.ts",
+      // to use multiple outfiles HAS to be the .js file not the source ts file
+      //"program": "${workspaceFolder}/src/index.ts",
+      "program": "${workspaceFolder}/out/index.js",
       "outputCapture": "std",
       "preLaunchTask": "build example-app",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
-      //"runtimeArgs": [
-      //  "--preserve-symlinks",
-      //  "--preserve-symlinks-main"
-      //],
-      //"outFiles": ["${workspaceFolder}/{out,node_modules/@xsofo}/**/*.js"],
-      //"outFiles": ["${workspaceFolder}/../../{apps,libs}/example-app/out/**/*.js"],
-      "outFiles": ["${workspaceFolder}/../../libs/test-lib/out/**/*.js"],
+      "outFiles": [
+        "${workspaceFolder}/**/*.js",
+        "${workspaceFolder}/../../libs/test-lib/out/**/*.js"
+      ],
       "args": ["test", "sir", "--hello"]
     }
   ]
